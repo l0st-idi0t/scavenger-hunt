@@ -1,3 +1,75 @@
 body {
-    background-color: #ffffff;
+    /* background-color: #b93333; */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
 }
+
+.text {
+    width: 50%;
+    /* background-color: aqua; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; 
+    -webkit-animation: fadein 3s; 
+    -o-animation: fadein 3s;
+}
+
+h2 {
+    opacity: 0;
+    font-weight: lighter;
+    animation: fadein 3s linear 3s forwards;
+    -moz-animation: fadein 3s linear 3s forwards; 
+    -webkit-animation: fadein 3s linear 3s forwards; 
+    -o-animation: fadein 3s linear 3s forwards;
+}
+
+h1, h2 {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+p {
+    opacity: 0;
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    transform: rotate(10deg);
+    animation: fadein 3s linear 6s forwards;
+    -moz-animation: fadein 3s linear 6s forwards; 
+    -webkit-animation: fadein 3s linear 6s forwards; 
+    -o-animation: fadein 3s linear 6s forwards;
+}
+
+img {
+    display: block;
+    max-width: 40%;
+    max-height: 40%;
+    width: auto;
+    height: auto;
+    margin-top: 15%;
+}
+
+img {
+    animation: slide 1s ease-in-out, fadein 2s;
+    -moz-animation: slide 1s ease-in-out, fadein 2s; 
+    -webkit-animation: slide 1s ease-in-out, fadein 2s; 
+    -o-animation: slide 1s ease-in-out, fadein 2s;
+}
+
+@keyframes slide {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+} 
