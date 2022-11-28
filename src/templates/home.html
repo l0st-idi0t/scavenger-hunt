@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Scavenger Hunt</title>
-        <link rel="stylesheet" href="css/home.css">
-        <link rel="script" href="js/home.js">
+        <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+        <link rel="script" href="{{url_for('static', filename='js/home.js')}}">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
     <body>
@@ -12,7 +12,7 @@
             <h2>yall ready for a scavenger hunt?</h2>
             <p>it already started btw :)</p>   
         </div>
-        <img src="images/home.png" alt="yoink" class="logo">
+        <img src="{{url_for('static', filename='images/home.png')}}" alt="yoink" class="logo">
 
         <!--did i mention that i love robots? 😉-->
     </body>
