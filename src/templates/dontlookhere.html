@@ -8,12 +8,20 @@
     </head>
     <body>
         <div class="container">
+            <br/><br/><br/>
             <div class="typing">
                 "A picture is worth more than a thousand words."
             </div>
-            <br>
+            <br/>
             <div class="typing2">
                 but sometimes words, or rather, sounds, are worth more than a thousand pictures.
+            </div>
+            <br/><br/><br/>
+            <div class="audio">
+                <audio controls>
+                    <source src="{{url_for('static', filename='misc/steg_audio.mp3')}}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
             </div>
         </div>
     </body>

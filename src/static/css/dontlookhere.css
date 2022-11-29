@@ -3,16 +3,16 @@ body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     text-align: center;
+    background-color: white;
 }
 
 .typing {
-    margin-top: 10%;
     overflow: hidden;
-    border-right: .15em solid rgb(0, 0, 0);
+    border-right: .05em solid rgb(0, 0, 0);
     font-size: 1.6rem;
     white-space: nowrap;
     width: 0;
-    animation: typing 2s steps(35, end) forwards, disappear .2s forwards;
+    animation: typing 2s steps(48, end) forwards, disappear 0s forwards;
     animation-delay: 0s, 2s;
 }
 
@@ -21,7 +21,7 @@ body {
     font-size: 1.6rem;
     white-space: nowrap;
     width: 0;
-    animation: typing 3s steps(50, end) forwards, blink .8s infinite;
+    animation: typing 3s steps(80, end) forwards, blink 1s infinite;
     animation-delay: 2s;
 }
 
@@ -29,14 +29,20 @@ body {
     display: inline-block;
 }
 
+.audio {
+    opacity: 0;
+    animation: fadein 3s forwards;
+    animation-delay: 5s;
+}
+
 @keyframes typing {
     from { 
         width: 0; 
-        border-right: .15em solid rgb(0, 0, 0) 
+        border-right: .05em solid rgb(0, 0, 0) 
     }
     to { 
         width: 100%;
-        border-right: .15em solid rgb(0, 0, 0) 
+        border-right: .05em solid rgb(0, 0, 0) 
     }
 }
 
@@ -46,7 +52,11 @@ body {
 }
 
 @keyframes disappear {
-    from { border-right: .15em solid rgb(0, 0, 0) }
+    from { border-right: .05em solid rgb(0, 0, 0) }
     to { border-right: 0em }
 }
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
