@@ -12,6 +12,10 @@ def home():
 def robots():
     return "User-agent: * <br> Disallow: /dontlookhere"
 
+@app.route('/dontlookhere')
+def dontlookhere():
+    return render_template('dontlookhere.html')
+
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 8000))

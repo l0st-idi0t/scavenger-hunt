@@ -1,0 +1,52 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.typing {
+    margin-top: 10%;
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 0, 0);
+    font-size: 1.6rem;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 2s steps(35, end) forwards, disappear .2s forwards;
+    animation-delay: 0s, 2s;
+}
+
+.typing2 {
+    overflow: hidden;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(50, end) forwards, blink .8s infinite;
+    animation-delay: 2s;
+}
+
+.container {
+    display: inline-block;
+}
+
+@keyframes typing {
+    from { 
+        width: 0; 
+        border-right: .15em solid rgb(0, 0, 0) 
+    }
+    to { 
+        width: 100%;
+        border-right: .15em solid rgb(0, 0, 0) 
+    }
+}
+
+@keyframes blink {
+    from { border-color: transparent }
+    to { border-color: rgb(0, 0, 0) }
+}
+
+@keyframes disappear {
+    from { border-right: .15em solid rgb(0, 0, 0) }
+    to { border-right: 0em }
+}
+
