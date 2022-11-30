@@ -3,7 +3,6 @@
     <head>
         <title>Scavenger Hunt</title>
         <link rel="stylesheet" href="{{url_for('static', filename='css/dontlookhere.css')}}">
-        <link rel="script" href="{{url_for('static', filename='js/dontlookhere.js')}}">
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
     <body>
@@ -23,7 +22,11 @@
                     Your browser does not support the audio element.
                 </audio>
             </div>
+            <br/><br/><br/>
+            <span id="hint">you might wanna download the file and do a little spec analysis</span>
         </div>
+        
+        <script src="{{url_for('static', filename='js/dontlookhere.js')}}"></script>
     </body>
 </html>
 
